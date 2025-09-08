@@ -1,1 +1,42 @@
-<p>tab works!</p>
+<p-tabs value="0" class="summary">
+  <p-tablist class="w-full">
+      <p-tab value="0" class="w-2" >IPSA</p-tab>
+      <p-tab value="1" class="w-2">IGPA</p-tab>
+      <p-tab value="2" class="w-2">NASDAQ</p-tab>
+      <p-tab value="3" class="w-2">DOW JONES</p-tab>
+      <p-tab value="4" class="w-2">SP/BVL</p-tab>
+  </p-tablist>
+  <p-tabpanels >
+      <p-tabpanel value="0">
+        <div class="grid">
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+        </div>
+      </p-tabpanel>
+      <p-tabpanel value="1">
+        <div class="grid">
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+        </div>
+      </p-tabpanel>
+      <p-tabpanel value="2">
+        <div class="grid">
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+        </div>
+      </p-tabpanel>
+      <p-tabpanel value="3">
+        <div class="grid">
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+        </div>
+      </p-tabpanel>
+      <p-tabpanel value="4">
+        <div class="grid">
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+          <dashboard-instrument-list class="col-6"></dashboard-instrument-list>
+        </div>
+      </p-tabpanel>
+  </p-tabpanels>
+</p-tabs>
+

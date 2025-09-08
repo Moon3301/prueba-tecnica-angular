@@ -1,1 +1,14 @@
-<p>header works!</p>
+
+  <p-menubar [model]="items" class="menu">
+
+    <ng-template pTemplate="start">
+      <img src="assets/images/logo.svg" class="m-0 p-0" alt="Logo" width="33" height="33">
+    </ng-template>
+
+    <ng-template pTemplate="end">
+      <p-avatar  icon="pi pi-user" class="mr-2" size="normal" />
+    </ng-template>
+
+  </p-menubar>
+
+

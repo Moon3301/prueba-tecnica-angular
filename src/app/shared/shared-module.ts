@@ -4,17 +4,20 @@ import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
 import { Layout } from './pages/layout/layout';
 import { RouterModule } from '@angular/router';
-
+import { PrimengModule } from '../primeng/primeng-module';
+import { NotFoundPage } from './pages/not-found-page/not-found-page';
 
 @NgModule({
   declarations: [
     Header,
     Footer,
-    Layout
+    Layout,
+    NotFoundPage
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    PrimengModule
   ],
   exports: [
     Header,

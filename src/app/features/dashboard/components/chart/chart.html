@@ -1,1 +1,6 @@
-<p>chart works!</p>
+<p-chart type="line" [data]="data" [options]="options" class="h-[30rem]" />
+
+<div class="card flex justify-center mt-4">
+  <p-selectbutton [options]="paymentOptions" [(ngModel)]="value" [multiple]="false" optionLabel="name" optionValue="value" />
+</div>
+

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-tab',
+  selector: 'dashboard-tab',
   standalone: false,
   templateUrl: './tab.html',
   styleUrl: './tab.css'

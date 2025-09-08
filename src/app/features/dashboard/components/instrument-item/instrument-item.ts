@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-instrument-item',
+  selector: 'dashboard-instrument-item',
   standalone: false,
   templateUrl: './instrument-item.html',
   styleUrl: './instrument-item.css'

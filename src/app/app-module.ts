@@ -4,7 +4,8 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { SharedModule } from './shared/shared-module';
 import { providePrimeNG } from 'primeng/config';
-import Aura from '@primeuix/themes/aura';
+import MyPreset from './config/custom-presets';
+import { CoreModule } from './core/core-module';
 
 @NgModule({
   declarations: [
@@ -13,14 +14,15 @@ import Aura from '@primeuix/themes/aura';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     providePrimeNG({
         theme: {
-          preset: Aura,
+          preset: MyPreset,
         }
     })
   ],
