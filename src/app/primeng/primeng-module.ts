@@ -10,6 +10,8 @@ import { DividerModule } from 'primeng/divider';
 import { TabsModule } from 'primeng/tabs';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
+import { DatePickerModule } from 'primeng/datepicker';
+
 
 @NgModule({
   exports: [
@@ -23,7 +25,8 @@ import { TableModule } from 'primeng/table';
     DividerModule,
     TabsModule,
     SelectButtonModule,
-    TableModule
+    TableModule,
+    DatePickerModule
 
   ]
 })

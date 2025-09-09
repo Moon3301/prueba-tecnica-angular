@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, inject, OnInit, PLATFORM_ID } from '@angu
 import { ChartModule } from 'primeng/chart';
 import { isPlatformBrowser } from '@angular/common';
 import { text } from '@primeuix/themes/aura/inlinemessage';
+import { DatePicker } from 'primeng/datepicker';
 
 @Component({
   selector: 'dashboard-chart',
@@ -10,6 +11,8 @@ import { text } from '@primeuix/themes/aura/inlinemessage';
   styleUrl: './chart.css'
 })
 export class Chart implements OnInit{
+
+  date: Date | undefined;
 
   data: any;
 
@@ -29,10 +32,11 @@ export class Chart implements OnInit{
       { name: '5A', value: '5A' }
   ];
 
-  constructor(private cd: ChangeDetectorRef) {}
+  constructor(private cd: ChangeDetectorRef ) {}
 
   ngOnInit() {
       this.initChart();
+      
   }
 
   initChart() {

@@ -6,6 +6,8 @@ import { SharedModule } from './shared/shared-module';
 import { providePrimeNG } from 'primeng/config';
 import MyPreset from './config/custom-presets';
 import { CoreModule } from './core/core-module';
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { CoreModule } from './core/core-module';
         theme: {
           preset: MyPreset,
         }
-    })
+    }),
+    provideAnimations()
   ],
   bootstrap: [App]
 })

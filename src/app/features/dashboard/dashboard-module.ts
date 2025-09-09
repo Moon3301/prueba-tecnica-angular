@@ -14,6 +14,9 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
+  providers: [
+
+  ],
   declarations: [
     SearchBar,
     Chart,
